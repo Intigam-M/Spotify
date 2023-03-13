@@ -1,10 +1,14 @@
 import { configureStore } from "@reduxjs/toolkit"
 import { authSlice } from "./slices/authSlice"
+import { playerSlice } from "./slices/playerSlice"
+import { playlistSlice } from "./slices/playlistSlice"
 
 
 export const store = configureStore({
     reducer: {
       auth: authSlice.reducer,
+      player: playerSlice.reducer,
+      playlist: playlistSlice.reducer,
     },
   })
   
